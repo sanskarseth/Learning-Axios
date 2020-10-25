@@ -50,8 +50,9 @@ class App extends Component {
     catch(ex){
       if(ex.response && ex.response.status===404)
         alert("Not Found!");
+
+      this.setState({posts:originalPost});
     }
-    this.setState({posts:originalPost});
   };
 
   render() {

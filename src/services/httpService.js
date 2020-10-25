@@ -1,5 +1,6 @@
 import axios from 'axios';
 import {toast} from "react-toastify";
+import * as Sentry from "@sentry/react";
 
 axios.interceptors.response.use(null,error=>{
 
